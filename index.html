@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <section id="background-container">
+        <div id="modal">
+            <div id="color-bar"></div>
+            <div id="text">
+                <p>Registered successfully 😀 </p>
+            </div>
+        </div>
+        <section id="top-left"></section>
+        <section id="bottom-right"></section>
+
+        <form id="form-container" onsubmit="return false;" >
+
+            <div class="inp-container" style="margin-top: 10px;">
+                <div class="text-container">
+                    <div class="text">
+                        <p>First Name:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="firstName" type="text" class="input" placeholder="First Name">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inp-container">
+                <div class="text-container">
+                    <div class="text">
+                        <p>Last Name:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="lastName" type="text" class="input" placeholder="Last Name">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inp-container">
+                <div class="text-container">
+                    <div class="text">
+                        <p>User Id:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="UserId" type="text" class="input" placeholder="User Id">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inp-container">
+                <div class="text-container">
+                    <div class="text">
+                        <p>Email:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="Email" type="text" class="input" placeholder="Email id">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inp-container">
+                <div class="text-container">
+                    <div class="text">
+                        <p>Password:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="password" type="text" class="input" placeholder="Password">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inp-container">
+                <div class="text-container">
+                    <div class="text">
+                        <p>Confirm Password:</p>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-field-container">
+                    <div class="line"></div>
+                    <input onfocusout="disableAnimation(this)" onfocus="animateField(this)" name="confirmPassword" type="text" class="input" placeholder="Confirm Password">
+                    <div class="error">
+                        <p style="color: red;"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="inp-container submit-buttons">
+                <button  type="submit" class="button" onclick="validate()">Submit</button>
+                <button class="button" onclick="reset()">Reset</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
